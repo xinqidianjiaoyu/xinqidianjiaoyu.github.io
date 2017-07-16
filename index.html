@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,43 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-angular" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/16/angular/" class="article-date">
+  <time datetime="2017-07-16T01:03:01.000Z" itemprop="datePublished">2017-07-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#angular</p>
+<p>###指令系统</p>
+<ul>
+<li>ng-app 是angular的入口,表示当前元素的所有指令都会被angular管理(对每一个指令进行分析和操作)</li>
+<li>ng-model 是双向数据绑定的指令,效果就是将当前元素的value属性和模型中对应的属性建立绑定关系</li>
+</ul>
+<p>##五大特性 </p>
+<p>###mvc</p>
+<p>###数据双向绑定</p>
+<p>###依赖注入</p>
+<p>###模板</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/16/angular/" data-id="cj56rouz40000dktmrsf1r53m" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-第二个" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -87,7 +124,80 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/第二个/" data-id="cj552tl420001d3tmb3luhghz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/15/第二个/" data-id="cj56rouzg0005dktm8qff8fhq" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hexo搭建github博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/15/hexo搭建github博客/" class="article-date">
+  <time datetime="2017-07-15T08:37:56.000Z" itemprop="datePublished">2017-07-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#hexo</p>
+<p>##hexo搭建本地博客</p>
+<ol>
+<li>全局安装hexo npm install hexo -g</li>
+<li>创建一个blog文件夹,在blog文件夹中执行 hexo init 初始化hexo , 会自动下载hexo的依赖</li>
+<li>执行命令生成静态html文件 hexo generate</li>
+<li>执行 hexo server 会生成一个服务器  并监听4000端口 输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 即可访问本地博客</li>
+</ol>
+<h2 id="配置Guthub"><a href="#配置Guthub" class="headerlink" title="配置Guthub"></a>配置Guthub</h2><ol>
+<li>建立Repository 名称必须为 xinqidianjiaoyu(userName).github.io</li>
+<li><p>然后打开blog文件夹下面的 _config.yml 文件 翻到最下面, 配置deploy</p>
+<pre><code>deploy:
+
+     type: git
+
+     repo: https://github.com/leopardpan/leopardpan.github.io.git
+
+     branch: master
+</code></pre></li>
+<li><p>安装 hexo-deployer-git 插件(让文件支持git上传)</p>
+</li>
+<li>最后执行命令 hexo deploy 把本地的public中的静态博客部署到github的仓库中</li>
+<li>在浏览器中输入 <a href="https://xinqidianjiaoyu.github.io" target="_blank" rel="external">https://xinqidianjiaoyu.github.io</a> 就可访问github上的博客了</li>
+</ol>
+<p>###每次使用指令步骤</p>
+<p>每次部署的步骤，可按以下三步来进行。</p>
+<pre><code>hexo clean    清空public文件夹
+
+hexo generate    根据 source/_posts/*.md文件生成public文件夹和对应的网页文件
+
+hexo deploy  把本地public文件夹中的网站资源上传到github服务器中
+
+通过 https://xinqidianjiaoyu.github.io 就可以访问网站博客了
+</code></pre><p>  一些常用命令：</p>
+<pre><code>hexo new&quot;postName&quot; #新建文章
+
+hexo new page&quot;pageName&quot; #新建页面
+
+hexo generate #生成静态页面至public目录
+
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+
+hexo deploy #将.deploy目录部署到GitHub
+
+hexo help # 查看帮助
+
+hexo version #查看Hexo的版本
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/15/hexo搭建github博客/" data-id="cj56rouzk0007dktm0512b1kl" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -132,7 +242,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/hello-world/" data-id="cj552tl3x0000d3tmq6ilbkhk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/15/hello-world/" data-id="cj56rouza0001dktm971vo8ce" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -169,7 +279,165 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/张凯第一个hexo/" data-id="cj552tl450002d3tmaomxge8l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/15/张凯第一个hexo/" data-id="cj56rouze0003dktmqpdnsq86" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-git&amp;github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/15/git&github/" class="article-date">
+  <time datetime="2017-07-15T06:55:05.000Z" itemprop="datePublished">2017-07-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#git&amp;github</p>
+<ol>
+<li>cd 到当前目录</li>
+<li>git init 初始化一个本地仓库</li>
+<li>git status 查看本地仓储的文件状态</li>
+<li>git add .  将所有没有被跟踪的文件添加到跟踪列表</li>
+<li>添加git的忽略<ul>
+<li>在代码库跟文件夹添加一个.gitignore</li>
+<li>把要忽略的文件写在.gitignore中</li>
+</ul>
+</li>
+<li>git commit -m “提交信息”   把本地变化提交到本地的仓库文件夹归档</li>
+<li>git diff  查看本地文件夹和git中保存的最新的文件比较</li>
+<li>git log  查看git提交日志</li>
+<li>git reset –hard 2d2250(log的hash值)        把代码追溯到指定版本</li>
+<li>git help 查看git的左右命令</li>
+</ol>
+<p>##github</p>
+<p>###基本应用</p>
+<ol>
+<li>首先链接远程仓库    git remote add origin <a href="https://github.com/xinqidianjiaoyu/git-demo.git(github链接网址" target="_blank" rel="external">https://github.com/xinqidianjiaoyu/git-demo.git(github链接网址</a>)<ul>
+<li>首次链接远程仓库会需要输入github用户名和密码用来验证用户是否有权限推送或者拉取代码</li>
+<li>只有首次需要执行此操作,以后项目结构会自动把网址分析为origin</li>
+</ul>
+</li>
+<li>网远程仓库推送代码    git push -u origin master<ul>
+<li>此处的 -u 是用流的方式往github上推送代码,会快一点</li>
+<li>origin 就是远程仓库的地址</li>
+<li>master 表示是远程代码仓库的主分支</li>
+<li>在每次push之前要先pull一下,防止代码冲突</li>
+</ul>
+</li>
+<li>从远程仓库拉取代码 git pull origin master<ul>
+<li>从远程仓库拉取代码的时候不需要加 -u 参数. 加了会报错</li>
+</ul>
+</li>
+</ol>
+<h3 id="github创建分支"><a href="#github创建分支" class="headerlink" title="github创建分支"></a>github创建分支</h3><ol>
+<li>查看项目所有分支和当前分支 git branch</li>
+<li>新建分支 git branch branchName</li>
+<li>切换分支 git checkout branchName</li>
+</ol>
+<h3 id="github托管页面-创建-gh-pages-分支"><a href="#github托管页面-创建-gh-pages-分支" class="headerlink" title="github托管页面(创建 gh-pages 分支)"></a>github托管页面(创建 gh-pages 分支)</h3><ol>
+<li>把项目添加到 gh-pages 分支就可以在线预览文件</li>
+<li>项目地址为 xinqidianjiaoyu.github.io/productName  (项目名称是区分大小写的)</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/15/git&github/" data-id="cj56rouzf0004dktmu0b6bbfd" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/15/gulp/" class="article-date">
+  <time datetime="2017-07-15T03:05:22.000Z" itemprop="datePublished">2017-07-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#gulp</p>
+<ol>
+<li>在gulp跟文件中使用 npm init 创建 package.json文件</li>
+<li>使用 npm install gulp –save-dev 添加项目在开发阶段对gulp的依赖并下载gulp,因为gulp只是在开发阶段使用,不在项目运行阶段使用,所有只需要在开发依赖中使用即可</li>
+<li>在项目跟目录中创建gulpfile.js文件去设置需要用到的任务,文件名是固定的不可以自定义文件名</li>
+<li>编译gulpfile设置各种任务 </li>
+<li><p>gulp执行各项任务需要依赖的包  </p>
+<ul>
+<li>gulp-less 编译less的工具</li>
+<li>gulp-concat 合并代码</li>
+<li>gulp-uglify 压缩js代码</li>
+<li>gulp-cssnano 压缩css</li>
+<li>gulp-htmlmin 压缩html</li>
+<li>browser-sync 自动化同步服务器</li>
+</ul>
+</li>
+<li><p>编译gulpfile,把相应的任务写好以后,在命令行中输入 gulp style(任务名称)去执行相应任务</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/15/gulp/" data-id="cj56rouzc0002dktmdh2vdybk" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-npm&amp;bower" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/14/npm&bower/" class="article-date">
+  <time datetime="2017-07-14T12:08:05.000Z" itemprop="datePublished">2017-07-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="npm-amp-bower"><a href="#npm-amp-bower" class="headerlink" title="npm&amp;bower"></a>npm&amp;bower</h1><ul>
+<li>npm是一个包管理工具(node package manager)</li>
+<li>在项目跟文件夹下,使用命令npm install jquery 可以安装包,安装后会在node_modules中把指定的包下载到里面,并自动把其依赖的包也会下载</li>
+<li>在install之前使用命令npm init 创建一个package.json文件然后在下载包的时候使用命令npm install jquery –save 会在package.json中有一个dependencies节点记录本项目依赖的包,在下次使用的时候可以直接使用npm install命令去下载项目依赖的包.</li>
+<li>使用npm inistall jquery –save-dev会在package.json中有一个devDependencies节点记录项目开发阶段使用到的包,而跟项目运行没有关系.</li>
+<li>使用npm install jquery -g 去下载全局用到的包, 比如bower</li>
+<li>使用npm uninstall jquery 去卸载一个包</li>
+</ul>
+<ul>
+<li>bower跟npm区别<ul>
+<li>bower主要用于Web页面开发时使用的包.</li>
+<li>npm主要用于node开发时使用的包.</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/14/npm&bower/" data-id="cj56rouzj0006dktmu744r7am" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -204,12 +472,20 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
           <li>
+            <a href="/2017/07/16/angular/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2017/07/15/第二个/">第二个博客</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/15/hexo搭建github博客/">(no title)</a>
           </li>
         
           <li>
@@ -233,7 +509,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
