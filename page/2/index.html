@@ -3,18 +3,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>gulp | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#gulp  在gulp跟文件中使用 npm init 创建 package.json文件 使用 npm install gulp –save-dev 添加项目在开发阶段对gulp的依赖并下载gulp,因为gulp只是在开发阶段使用,不在项目运行阶段使用,所有只需要在开发依赖中使用即可 在项目跟目录中创建gulpfile.js文件去设置需要用到的任务,文件名是固定的不可以自定义文件名 编译gulp">
-<meta property="og:type" content="article">
-<meta property="og:title" content="gulp">
-<meta property="og:url" content="http://yoursite.com/2017/07/15/gulp/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="#gulp  在gulp跟文件中使用 npm init 创建 package.json文件 使用 npm install gulp –save-dev 添加项目在开发阶段对gulp的依赖并下载gulp,因为gulp只是在开发阶段使用,不在项目运行阶段使用,所有只需要在开发依赖中使用即可 在项目跟目录中创建gulpfile.js文件去设置需要用到的任务,文件名是固定的不可以自定义文件名 编译gulp">
-<meta property="og:updated_time" content="2017-07-16T13:48:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gulp">
-<meta name="twitter:description" content="#gulp  在gulp跟文件中使用 npm init 创建 package.json文件 使用 npm install gulp –save-dev 添加项目在开发阶段对gulp的依赖并下载gulp,因为gulp只是在开发阶段使用,不在项目运行阶段使用,所有只需要在开发依赖中使用即可 在项目跟目录中创建gulpfile.js文件去设置需要用到的任务,文件名是固定的不可以自定义文件名 编译gulp">
+<meta name="twitter:title" content="Hexo">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -63,10 +59,12 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main">
+  
+    <article id="post-npm&amp;bower" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/07/15/gulp/" class="article-date">
-  <time datetime="2017-07-15T03:05:22.000Z" itemprop="datePublished">2017-07-15</time>
+    <a href="/2017/07/14/npm&bower/" class="article-date">
+  <time datetime="2017-07-14T12:08:05.000Z" itemprop="datePublished">2017-07-14</time>
 </a>
     
   </div>
@@ -76,8 +74,8 @@
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      gulp
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/14/npm&bower/">npm&amp;bower</a>
     </h1>
   
 
@@ -85,58 +83,40 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#gulp</p>
-<ol>
-<li>在gulp跟文件中使用 npm init 创建 package.json文件</li>
-<li>使用 npm install gulp –save-dev 添加项目在开发阶段对gulp的依赖并下载gulp,因为gulp只是在开发阶段使用,不在项目运行阶段使用,所有只需要在开发依赖中使用即可</li>
-<li>在项目跟目录中创建gulpfile.js文件去设置需要用到的任务,文件名是固定的不可以自定义文件名</li>
-<li>编译gulpfile设置各种任务 </li>
-<li><p>gulp执行各项任务需要依赖的包  </p>
+        <h1 id="npm-amp-bower"><a href="#npm-amp-bower" class="headerlink" title="npm&amp;bower"></a>npm&amp;bower</h1><ul>
+<li>npm是一个包管理工具(node package manager)</li>
+<li>在项目跟文件夹下,使用命令npm install jquery 可以安装包,安装后会在node_modules中把指定的包下载到里面,并自动把其依赖的包也会下载</li>
+<li>在install之前使用命令npm init 创建一个package.json文件然后在下载包的时候使用命令npm install jquery –save 会在package.json中有一个dependencies节点记录本项目依赖的包,在下次使用的时候可以直接使用npm install命令去下载项目依赖的包.</li>
+<li>使用npm inistall jquery –save-dev会在package.json中有一个devDependencies节点记录项目开发阶段使用到的包,而跟项目运行没有关系.</li>
+<li>使用npm install jquery -g 去下载全局用到的包, 比如bower</li>
+<li>使用npm uninstall jquery 去卸载一个包</li>
+</ul>
 <ul>
-<li>gulp-less 编译less的工具</li>
-<li>gulp-concat 合并代码</li>
-<li>gulp-uglify 压缩js代码</li>
-<li>gulp-cssnano 压缩css</li>
-<li>gulp-htmlmin 压缩html</li>
-<li>browser-sync 自动化同步服务器</li>
+<li>bower跟npm区别<ul>
+<li>bower主要用于Web页面开发时使用的包.</li>
+<li>npm主要用于node开发时使用的包.</li>
 </ul>
 </li>
-<li><p>编译gulpfile,把相应的任务写好以后,在命令行中输入 gulp style(任务名称)去执行相应任务</p>
-</li>
-</ol>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/gulp/" data-id="cj56s7mop0003lotmv2dhtj3c" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/07/14/npm&bower/" data-id="cj56s7mor0005lotmdwawiznn" class="article-share-link">Partager</a>
       
       
     </footer>
   </div>
   
-    
-<nav id="article-nav">
-  
-    <a href="/2017/07/15/git&github/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/07/14/npm&bower/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
-      <div class="article-nav-title">npm&amp;bower</div>
-    </a>
-  
-</nav>
-
-  
 </article>
 
+
+  
+
+
+  <nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
 </section>
         
           <aside id="sidebar">
