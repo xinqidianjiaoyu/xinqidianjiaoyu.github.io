@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,194 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-npm-bower" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/16/npm-bower/" class="article-date">
+  <time datetime="2017-07-16T13:58:47.000Z" itemprop="datePublished">2017-07-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/16/npm-bower/">npm&amp;bower</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="npm-amp-bower"><a href="#npm-amp-bower" class="headerlink" title="npm&amp;bower"></a>npm&amp;bower</h1><ul>
+<li>npm是一个包管理工具(node package manager)</li>
+<li>在项目跟文件夹下,使用命令npm install jquery 可以安装包,安装后会在node_modules中把指定的包下载到里面,并自动把其依赖的包也会下载</li>
+<li>在install之前使用命令npm init 创建一个package.json文件然后在下载包的时候使用命令npm install jquery –save 会在package.json中有一个dependencies节点记录本项目依赖的包,在下次使用的时候可以直接使用npm install命令去下载项目依赖的包.</li>
+<li>使用npm inistall jquery –save-dev会在package.json中有一个devDependencies节点记录项目开发阶段使用到的包,而跟项目运行没有关系.</li>
+<li>使用npm install jquery -g 去下载全局用到的包, 比如bower</li>
+<li>使用npm uninstall jquery 去卸载一个包</li>
+</ul>
+<ul>
+<li>bower跟npm区别<ul>
+<li>bower主要用于Web页面开发时使用的包.</li>
+<li>npm主要用于node开发时使用的包.</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/16/npm-bower/" data-id="cj56sfl2a0004p5tmku2u846q" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-gulp-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/16/gulp-1/" class="article-date">
+  <time datetime="2017-07-16T13:57:53.000Z" itemprop="datePublished">2017-07-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/16/gulp-1/">gulp</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#gulp</p>
+<ol>
+<li>在gulp跟文件中使用 npm init 创建 package.json文件</li>
+<li>使用 npm install gulp –save-dev 添加项目在开发阶段对gulp的依赖并下载gulp,因为gulp只是在开发阶段使用,不在项目运行阶段使用,所有只需要在开发依赖中使用即可</li>
+<li>在项目跟目录中创建gulpfile.js文件去设置需要用到的任务,文件名是固定的不可以自定义文件名</li>
+<li>编译gulpfile设置各种任务 </li>
+<li><p>gulp执行各项任务需要依赖的包  </p>
+<ul>
+<li>gulp-less 编译less的工具</li>
+<li>gulp-concat 合并代码</li>
+<li>gulp-uglify 压缩js代码</li>
+<li>gulp-cssnano 压缩css</li>
+<li>gulp-htmlmin 压缩html</li>
+<li>browser-sync 自动化同步服务器</li>
+</ul>
+</li>
+<li><p>编译gulpfile,把相应的任务写好以后,在命令行中输入 gulp style(任务名称)去执行相应任务</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/16/gulp-1/" data-id="cj56sfl2c0005p5tmgjiwhf0l" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-git-github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/16/git-github/" class="article-date">
+  <time datetime="2017-07-16T13:57:05.000Z" itemprop="datePublished">2017-07-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/16/git-github/">git&amp;github</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#git&amp;github</p>
+<ol>
+<li>cd 到当前目录</li>
+<li>git init 初始化一个本地仓库</li>
+<li>git status 查看本地仓储的文件状态</li>
+<li>git add .  将所有没有被跟踪的文件添加到跟踪列表</li>
+<li>添加git的忽略<ul>
+<li>在代码库跟文件夹添加一个.gitignore</li>
+<li>把要忽略的文件写在.gitignore中</li>
+</ul>
+</li>
+<li>git commit -m “提交信息”   把本地变化提交到本地的仓库文件夹归档</li>
+<li>git diff  查看本地文件夹和git中保存的最新的文件比较</li>
+<li>git log  查看git提交日志</li>
+<li>git reset –hard 2d2250(log的hash值)        把代码追溯到指定版本</li>
+<li>git help 查看git的左右命令</li>
+</ol>
+<p>##github</p>
+<p>###基本应用</p>
+<ol>
+<li>首先链接远程仓库    git remote add origin <a href="https://github.com/xinqidianjiaoyu/git-demo.git(github链接网址" target="_blank" rel="external">https://github.com/xinqidianjiaoyu/git-demo.git(github链接网址</a>)<ul>
+<li>首次链接远程仓库会需要输入github用户名和密码用来验证用户是否有权限推送或者拉取代码</li>
+<li>只有首次需要执行此操作,以后项目结构会自动把网址分析为origin</li>
+</ul>
+</li>
+<li>网远程仓库推送代码    git push -u origin master<ul>
+<li>此处的 -u 是用流的方式往github上推送代码,会快一点</li>
+<li>origin 就是远程仓库的地址</li>
+<li>master 表示是远程代码仓库的主分支</li>
+<li>在每次push之前要先pull一下,防止代码冲突</li>
+</ul>
+</li>
+<li>从远程仓库拉取代码 git pull origin master<ul>
+<li>从远程仓库拉取代码的时候不需要加 -u 参数. 加了会报错</li>
+</ul>
+</li>
+</ol>
+<h3 id="github创建分支"><a href="#github创建分支" class="headerlink" title="github创建分支"></a>github创建分支</h3><ol>
+<li>查看项目所有分支和当前分支 git branch</li>
+<li>新建分支 git branch branchName</li>
+<li>切换分支 git checkout branchName</li>
+</ol>
+<h3 id="github托管页面-创建-gh-pages-分支"><a href="#github托管页面-创建-gh-pages-分支" class="headerlink" title="github托管页面(创建 gh-pages 分支)"></a>github托管页面(创建 gh-pages 分支)</h3><ol>
+<li>把项目添加到 gh-pages 分支就可以在线预览文件</li>
+<li>项目地址为 xinqidianjiaoyu.github.io/productName  (项目名称是区分大小写的)</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/16/git-github/" data-id="cj56sfl280002p5tm40ycdtt2" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-zhang" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -156,7 +344,7 @@ obj.cc.call(kai, &quot;ni&quot;,&quot;hao&quot;,&quot;a&quot;,&quot;zhang&quot;,
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/16/zhang/" data-id="cj56sacn50006n1tmh805z4lz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/16/zhang/" data-id="cj56sfl2f0006p5tmuog2sxnn" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -192,7 +380,7 @@ obj.cc.call(kai, &quot;ni&quot;,&quot;hao&quot;,&quot;a&quot;,&quot;zhang&quot;,
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/16/测试/" data-id="cj56sacne0009n1tmx1zseedo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/16/测试/" data-id="cj56sfl2j0009p5tmtbu9pg72" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -288,7 +476,7 @@ obj.cc.call(kai, &quot;ni&quot;,&quot;hao&quot;,&quot;a&quot;,&quot;zhang&quot;,
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/16/call&apply/" data-id="cj56sacn00003n1tm8mo6j2tr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/16/call&apply/" data-id="cj56sfl260001p5tm3c3xhenk" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -335,7 +523,7 @@ obj.cc.call(kai, &quot;ni&quot;,&quot;hao&quot;,&quot;a&quot;,&quot;zhang&quot;,
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/16/angular/" data-id="cj56sacms0000n1tmvsipgxin" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/16/angular/" data-id="cj56sfl220000p5tme7cb48de" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -371,7 +559,7 @@ obj.cc.call(kai, &quot;ni&quot;,&quot;hao&quot;,&quot;a&quot;,&quot;zhang&quot;,
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/第二个/" data-id="cj56sacng000an1tmmita8go6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/15/第二个/" data-id="cj56sfl2i0008p5tmrizf5huv" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -454,52 +642,7 @@ hexo version #查看Hexo的版本
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/hexo搭建github博客/" data-id="cj56sacn20005n1tmey1j63dj" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/15/hello-world/" class="article-date">
-  <time datetime="2017-07-15T08:22:18.000Z" itemprop="datePublished">2017-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/hello-world/" data-id="cj56sacn10004n1tmr3xei2qe" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/15/hexo搭建github博客/" data-id="cj56sfl290003p5tmph5r1f24" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -536,135 +679,7 @@ hexo version #查看Hexo的版本
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/张凯第一个hexo/" data-id="cj56sacnc0008n1tmqd5rytud" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-git&amp;github" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/15/git&github/" class="article-date">
-  <time datetime="2017-07-15T06:55:05.000Z" itemprop="datePublished">2017-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>===</p>
-<h1 id="title-git-amp-github"><a href="#title-git-amp-github" class="headerlink" title="title: git&amp;github"></a>title: git&amp;github</h1><p>#git&amp;github</p>
-<ol>
-<li>cd 到当前目录</li>
-<li>git init 初始化一个本地仓库</li>
-<li>git status 查看本地仓储的文件状态</li>
-<li>git add .  将所有没有被跟踪的文件添加到跟踪列表</li>
-<li>添加git的忽略<ul>
-<li>在代码库跟文件夹添加一个.gitignore</li>
-<li>把要忽略的文件写在.gitignore中</li>
-</ul>
-</li>
-<li>git commit -m “提交信息”   把本地变化提交到本地的仓库文件夹归档</li>
-<li>git diff  查看本地文件夹和git中保存的最新的文件比较</li>
-<li>git log  查看git提交日志</li>
-<li>git reset –hard 2d2250(log的hash值)        把代码追溯到指定版本</li>
-<li>git help 查看git的左右命令</li>
-</ol>
-<p>##github</p>
-<p>###基本应用</p>
-<ol>
-<li>首先链接远程仓库    git remote add origin <a href="https://github.com/xinqidianjiaoyu/git-demo.git(github链接网址" target="_blank" rel="external">https://github.com/xinqidianjiaoyu/git-demo.git(github链接网址</a>)<ul>
-<li>首次链接远程仓库会需要输入github用户名和密码用来验证用户是否有权限推送或者拉取代码</li>
-<li>只有首次需要执行此操作,以后项目结构会自动把网址分析为origin</li>
-</ul>
-</li>
-<li>网远程仓库推送代码    git push -u origin master<ul>
-<li>此处的 -u 是用流的方式往github上推送代码,会快一点</li>
-<li>origin 就是远程仓库的地址</li>
-<li>master 表示是远程代码仓库的主分支</li>
-<li>在每次push之前要先pull一下,防止代码冲突</li>
-</ul>
-</li>
-<li>从远程仓库拉取代码 git pull origin master<ul>
-<li>从远程仓库拉取代码的时候不需要加 -u 参数. 加了会报错</li>
-</ul>
-</li>
-</ol>
-<h3 id="github创建分支"><a href="#github创建分支" class="headerlink" title="github创建分支"></a>github创建分支</h3><ol>
-<li>查看项目所有分支和当前分支 git branch</li>
-<li>新建分支 git branch branchName</li>
-<li>切换分支 git checkout branchName</li>
-</ol>
-<h3 id="github托管页面-创建-gh-pages-分支"><a href="#github托管页面-创建-gh-pages-分支" class="headerlink" title="github托管页面(创建 gh-pages 分支)"></a>github托管页面(创建 gh-pages 分支)</h3><ol>
-<li>把项目添加到 gh-pages 分支就可以在线预览文件</li>
-<li>项目地址为 xinqidianjiaoyu.github.io/productName  (项目名称是区分大小写的)</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/git&github/" data-id="cj56sacmy0002n1tmilq1oa7o" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/15/gulp/" class="article-date">
-  <time datetime="2017-07-15T03:05:22.000Z" itemprop="datePublished">2017-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/15/gulp/">gulp</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#gulp</p>
-<ol>
-<li>在gulp跟文件中使用 npm init 创建 package.json文件</li>
-<li>使用 npm install gulp –save-dev 添加项目在开发阶段对gulp的依赖并下载gulp,因为gulp只是在开发阶段使用,不在项目运行阶段使用,所有只需要在开发依赖中使用即可</li>
-<li>在项目跟目录中创建gulpfile.js文件去设置需要用到的任务,文件名是固定的不可以自定义文件名</li>
-<li>编译gulpfile设置各种任务 </li>
-<li><p>gulp执行各项任务需要依赖的包  </p>
-<ul>
-<li>gulp-less 编译less的工具</li>
-<li>gulp-concat 合并代码</li>
-<li>gulp-uglify 压缩js代码</li>
-<li>gulp-cssnano 压缩css</li>
-<li>gulp-htmlmin 压缩html</li>
-<li>browser-sync 自动化同步服务器</li>
-</ul>
-</li>
-<li><p>编译gulpfile,把相应的任务写好以后,在命令行中输入 gulp style(任务名称)去执行相应任务</p>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/gulp/" data-id="cj56sacmw0001n1tmu2tvice9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/15/张凯第一个hexo/" data-id="cj56sfl2g0007p5tmjklveilk" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -675,10 +690,6 @@ hexo version #查看Hexo的版本
 
   
 
-
-  <nav id="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
-  </nav>
 </section>
         
           <aside id="sidebar">
@@ -703,9 +714,21 @@ hexo version #查看Hexo的版本
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/07/16/npm-bower/">npm&amp;bower</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/16/gulp-1/">gulp</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/16/git-github/">git&amp;github</a>
+          </li>
         
           <li>
             <a href="/2017/07/16/zhang/">zhang</a>
@@ -713,18 +736,6 @@ hexo version #查看Hexo的版本
         
           <li>
             <a href="/2017/07/16/测试/">测试</a>
-          </li>
-        
-          <li>
-            <a href="/2017/07/16/call&apply/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2017/07/16/angular/">angular</a>
-          </li>
-        
-          <li>
-            <a href="/2017/07/15/第二个/">第二个博客</a>
           </li>
         
       </ul>
@@ -740,7 +751,7 @@ hexo version #查看Hexo的版本
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
